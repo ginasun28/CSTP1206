@@ -1,25 +1,30 @@
 // 1. Write a function to find the sum of the elements inside the array
 
-function sum()
+console.log("Question 1:");
+
+function findSum()
 {
-    console.log("Question 1:");
     var numArr = [2,4,6,8];
     var total = 0;
-
-    for(var num = 0; num < numArr.length; num++)
+    numArr.forEach(sum);
+    function sum(num)
     {
-        total += numArr[num];
+        total += num;
     }
+    // for(var num = 0; num < numArr.length; num++)
+    // {
+    //     total += numArr[num];
+    // }
     console.log(total); // 20
 }
 
-sum(); 
+findSum(); 
 
 // 2. Using a function for loop print all even numbers up to n (parameter in function);
 
+console.log("Question 2:");
 function printEvenNum(num)
 {
-    console.log("Question 2:");
     while(num <= 20){
 	    if(num%2 === 0){
 			console.log(num);
@@ -33,10 +38,11 @@ printEvenNum(10)
 
 // 3. Write a function take a string as a parameter, Check if a string contains the letter “y”. If yes print "YES" and only one time.
     // For example - "Crayzy" "Yes"
-    
-function checkLetter(str = "Crayzy")
+
+console.log("Question 3:");
+function checkLetter(str = "")
 {
-    console.log("Question 3:");
+    
     if (str.toLowerCase().includes("y"))
     {
         console.log(`"${str}" "Yes"\n`);
@@ -47,23 +53,24 @@ function checkLetter(str = "Crayzy")
     }
 }
 
-checkLetter();
+checkLetter("Crayzy");
+checkLetter("Coffee");
 
 // 4. Write a function to find the factorial of a given number n
 
-function factorialize(num) {
-
-    console.log("Question 4: ");
+console.log("Question 4: ");
+function factorialize(num) 
+{
     if (num === 0 || num === 1)
       return 1;
     for (var i = num - 1; i >= 1; i--) {
       num *= i;
     }
     console.log(`The factorial is ${num}\n`);
-  }
+}
   
-  factorialize(5);
-
+factorialize(5);
+factorialize(4);
 
 // 5. // Write a function which accepts 4 parameters (different scores of a student for subjects), and
 // then calculate the average of all the score.
@@ -120,13 +127,13 @@ console.log("Question 6: ");
 function starPattern(n)
 {
     var star = "";
-    for (var i = 1; i <= n; i++)
+    for (var i = 1; i <= n; i++) // loop row
     {
-        for (var j = 0; j < i; j++)
+        for (var j = 0; j < i; j++) // loop star
         {
-            star += "*";
+            star += "*"; // add star
         }
-        star += "\n";
+        star += "\n"; // add row
     }
     console.log(star);
       
@@ -150,24 +157,27 @@ starPattern(7);
 // **
 // *
 
-console.log("Question 7: ");
+console.log("Question 7:\n");
 function starPattern2(n)
 {
     var star = "";
-    for (var i = 1; i <= n; i++)
+    // star pattern
+    for (var i = 1; i <= n; i++) // loo row
     {
-        for (var j = 0; j < i; j++)
+        for (var j = 0; j < i; j++) // loop star
         {
-            star += "*";
+            star += "*"; // add star
         }
-        star += "\n";
+        star += "\n"; // add row
     }
-    for (let i = 0; i < n + 1; i++) {
-        // printing star
-        for (let k = 0; k < n - i; k++) {
-          star += "*";
+    // reverse star pattern
+    for (let i = 0; i < n + 1; i++) // loop row
+    {
+        for (let k = 0; k < n - i; k++) // loop star
+        {
+          star += "*"; // add star
         }
-        star += "\n";
+        star += "\n"; // add row
     }
     console.log(star);
       
@@ -184,7 +194,7 @@ function reverseString(string)
     var reverseArr = word.reverse(); // reverse string 
     var newArray = reverseArr.join(""); // store string to new array
     
-    console.log(newArray); // 
+    console.log(`${newArray}\n`); // lecxe
 }
  
 reverseString("excel");
