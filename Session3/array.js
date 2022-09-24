@@ -1,3 +1,4 @@
+// Session3
 // Arrays are used to store collection of data
 
 let studentList = []; // There is no data inside, which means its an empty array

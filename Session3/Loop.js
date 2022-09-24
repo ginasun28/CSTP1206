@@ -1,4 +1,4 @@
-
+// Session3
 // for loops are used to iterate over strings, arrays (Iterable datatypes)
 let array = [1,2,3,4];
 

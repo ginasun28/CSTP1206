@@ -1,4 +1,4 @@
-
+// Session3
 // FIRST WAY **************** function keyword
 function sum (a, b) {
     return a + b;
