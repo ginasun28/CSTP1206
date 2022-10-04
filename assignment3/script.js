@@ -17,7 +17,10 @@ function add() {
     info.push(infoData2);
     localStorage.setItem('infos', JSON.stringify(info));
 
+    
     displayTable();
+    clearInput();
+    
 }
 
 function displayTable() {
@@ -26,7 +29,11 @@ function displayTable() {
     // tableTitle.append("Information Table");
     // tableTitle.id = "tableid";
     // document.getElementById('table').appendChild(tableTitle);
-    
+    let btnClear = document.createElement('button');
+    btnClear.append("Clear");
+    btnClear.id = "clear";
+
+
     let tableHeaders = ['Name', 'Email Address', 'Student ID'];
 
     let table = document.createElement('table');
@@ -62,9 +69,19 @@ function displayTable() {
             table.appendChild(row);
             }); 
     }
-    
-document.getElementById("table").appendChild(table);
+    document.getElementById("table").appendChild(table);
+    // document.getElementById("table").appendChild(btnClear);
+    // document.getElementById("clear").onclick = function() {clear()};
 }
 
+// function clear()   {
+//     console.log("Clear called")
+//     localStorage.clear();
+// }
 
+function clearInput() {
+    document.getElementById('name').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('stuid').value ="";
+}
 

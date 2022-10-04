@@ -11,7 +11,7 @@ body {
   font-family: "Sansita Swashed", cursive;
 }
 .center {
-  position: relative;
+  /* position: relative; */
   padding: 50px 50px;
   background: #FFFFE0;
   border-radius: 10px;
@@ -66,13 +66,14 @@ body {
   width: 50%;
   background: #ff8000;
   color: #fff;
+  display: inline-block;
   border-radius: 30px;
   font-size: 15px;
   padding: 15px;
   border: #fff;
 }
 
-.center button:hover {
+button:hover {
   color: #3385ff;
   background: linear-gradient(45deg, #ffcc99,#FF7F50);
 }
