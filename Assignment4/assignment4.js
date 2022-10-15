@@ -28,9 +28,24 @@ let student = [
     }
     ];
 
-function studentWithHighestMarks(array) {
-
-}
+    function studentWithHighestMarks(array) {
+        const max = array.reduce((prev, current)=> ( (prev.y > current.y) ? prev : current),0)
+        console.log(max);
+    }
+    studentWithHighestMarks(student);
+    
+    
+    function studentWithHighestMarks2(array) {
+        var highestMark = Number.MIN_VALUE;
+        for(var i = 0; i < array.length; i++)
+        {
+            if (array[i].obj > highestMark) {
+                highestMark = array[i].obj;
+            }
+        }
+        console.log(highestMark);
+    }
+    studentWithHighestMarks(student);
 
 // Question2
 // Write a function to find the missing number in the array whose value ranges from 0 —> n,
