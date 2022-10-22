@@ -73,13 +73,13 @@ studentWithHighestMarks(student);
 // Let array = [2, 1, 0, 3, 7, 6,4, 5, 10, 9] , Here the missing number is 8, so you have to find it.
 
 let array = [ 4, 5, 2, 1, 0 ];
-let array2 = [2, 1, 0, 3, 7, 6,4, 5, 10, 9];
+let array2 = [2, 1, 0, 3, 7, 6, 4, 5, 10, 9];
 
 function missingNumber(array, n) {
     let missingNum = [];
     for(i = 0; i <= n; i++)
     {
-        if (!array.includes(i))
+        if (array.indexOf(i) == -1)
         {
             missingNum.push(i);
         }
@@ -89,3 +89,16 @@ function missingNumber(array, n) {
 console.log(missingNumber(array, 5));
 console.log(missingNumber(array2, 10));
 
+// function missingNumber(array, n) {
+//     let missingNum = [];
+//     for(i = 0; i <= n; i++)
+//     {
+//         if (!array.includes(i))
+//         {
+//             missingNum.push(i);
+//         }
+//     }
+//     return missingNum;
+// }
+// console.log(missingNumber(array, 5));
+// console.log(missingNumber(array2, 10));

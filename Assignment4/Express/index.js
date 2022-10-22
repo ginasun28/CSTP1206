@@ -6,7 +6,7 @@
 
 const express = require("express");
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 const employees = [
     {
       name: "Daniel",
@@ -33,8 +33,8 @@ app.post('/employees', (req, res) => {
     employees.push(employeeData);
     const data = res.status(201);
     return data.json(employeeData);
-})
+});
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
-})
+});
