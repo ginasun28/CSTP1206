@@ -3,10 +3,10 @@
 // Write get and post api’s for getting all the employees and adding employee to the list
 // The object of Employee should look like
 
-
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
+
 const employees = [
     {
       name: "Daniel",
@@ -16,10 +16,12 @@ const employees = [
     }
 ];
 
-app.use(express.json);
+ app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Employee API!");
+    console.info("in the index /");
+    res.status(200).send("Welcome to Employee API!");
+
 });
 
 app.get('/employees', (req, res) => {
