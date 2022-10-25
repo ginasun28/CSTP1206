@@ -77,11 +77,11 @@ let array2 = [2, 1, 0, 3, 7, 6, 4, 5, 10, 9];
 
 function missingNumber(array, n) {
     let missingNum = [];
-    for(i = 0; i <= n; i++)
+    for(let ele in array)
     {
-        if (array.indexOf(i) == -1)
+        if (array.indexOf(ele) == -1)
         {
-            missingNum.push(i);
+            missingNum.push(ele);
         }
     }
     return missingNum;

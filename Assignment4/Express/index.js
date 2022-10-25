@@ -16,7 +16,7 @@ const employees = [
     }
 ];
 
-app.use(express.json);
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send("Welcome to Employee API!");
@@ -38,3 +38,6 @@ app.post('/employees', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+
+
