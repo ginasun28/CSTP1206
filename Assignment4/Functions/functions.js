@@ -37,18 +37,20 @@ function studentWithHighestMarks(array){
     }
     // if student 1 is higher than student 2 retrun s1, if not return s2
     var max = array.reduce((s1, s2) => ( (s1 > s2) ? s1 : s2));
-    // console.log(max);
-    var str = "";
-    console.log("\nThe highest mark of student: ")
-    for (var obj in max)
+    return max;
+}
+// stu = max
+stu = studentWithHighestMarks(student);
+let str = '';
+console.log("The highest mark of student: ");
+console.log("total for highest student: " + stu.marks.reduce((mark, next) => mark + next) );
+for (var obj in stu)
     {
-        if (max.hasOwnProperty(obj)) {
-            str += obj + ': ' + max[obj] + '\n';
+        if (stu.hasOwnProperty(obj)) {
+            str += obj + ': ' + stu[obj] + '\n';
         }
     }
-    console.log(str);
-}
-studentWithHighestMarks(student);
+console.info(str);
 
 
 // function studentWithHighestMarks2(array) {
