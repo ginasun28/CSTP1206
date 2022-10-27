@@ -18,18 +18,21 @@ const employees = [
 
 app.use(express.json());
 
+// Read 
 app.get('/', (req, res) => {
     console.info("in the index /");
     res.status(200).send("Welcome to Employee API!");
 
 });
 
+// Read
 app.get('/employees', (req, res) => {
     // get succeed request give 200
     const data = res.status(200);
-    return data.json(employees); // return []
+    return data.json(employees);
 });
 
+// Create
 app.post('/employees', (req, res) => {
     const employeeData = req.body;
     employees.push(employeeData);

@@ -92,3 +92,8 @@ console.log(missingNumber(array, 5));
 console.log(missingNumber(array2, 10));
 
 
+function missing(arr, n) {
+    return n(arr[arr.findIndex((f,i,arr) => i ? f !== n(arr[i-1]) : false)-1]);
+  }
+  series1 = n => n+1
+  console.log(missing(array2, series1))
