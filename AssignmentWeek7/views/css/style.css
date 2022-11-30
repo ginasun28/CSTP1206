@@ -1,0 +1,80 @@
+.logo {
+  margin: 100px 100px;
+  text-align: center;
+}
+
+.jumbo-picture {
+  /* background-image: url(https://www.purina.co.uk/sites/default/files/2020-12/Understanding%20Your%20Cat%27s%20Body%20LanguageHERO.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  width: 200;
+  height: 520px;
+  border-radius: 15px;
+  background-color: #f9dcc4;
+  /* opacity: 0.6; */
+  }
+
+.jumbo-picture > h1 {
+  color: white;
+}
+
+.jumbo-picture > p {
+  color: white;
+}
+
+.message {
+  background-color: #f5ebe0;
+  border-radius: 15px;
+}
+
+.message > h4 {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.message > h3 {
+  padding-bottom: 3px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.message > img {
+  margin: auto;
+  display: block;
+  width: 15%;
+}
+
+.message2 p {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #9c6644;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.info p, h2 {
+  text-align: center;
+  color: #8a817c;
+  padding: 2px;
+}
+
+.info {
+  text-align: center;
+}
+
+.btn {
+  margin: 50px;
+}
+.fcc-btn {
+  margin: 50px;
+  background-color: #ff9505;
+  color: white;
+  font-weight: 500;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
