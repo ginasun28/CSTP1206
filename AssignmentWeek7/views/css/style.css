@@ -1,6 +1,18 @@
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Klee+One:wght@600&family=Rubik:wght@500&display=swap');
+
 .logo {
-  margin: 100px 100px;
+  margin: 50px 50px;
+  font-family: 'Damion', cursive;
   text-align: center;
+}
+
+.logo img {
+  padding-right: 10px;
+}
+
+.logo h1 {
+  font-size: 50px;
 }
 
 .jumbo-picture {
@@ -9,19 +21,11 @@
   background-position: center;
   background-repeat: no-repeat; */
   width: 200;
-  height: 520px;
+  height: 560px;
   border-radius: 15px;
   background-color: #f9dcc4;
   /* opacity: 0.6; */
   }
-
-.jumbo-picture > h1 {
-  color: white;
-}
-
-.jumbo-picture > p {
-  color: white;
-}
 
 .message {
   background-color: #f5ebe0;
@@ -32,12 +36,16 @@
   padding-top: 5px;
   text-align: center;
   font-size: 30px;
+  color: #f8961e;
+  font-family: 'Rubik', sans-serif;
 }
 
 .message > h3 {
-  padding-bottom: 3px;
+  padding-bottom: 40px;
   text-align: center;
   font-size: 50px;
+  color:#ae2012;
+  font-family: 'Rubik', sans-serif;
 }
 
 .message > img {
@@ -52,13 +60,16 @@
   padding-bottom: 20px;
   color: #9c6644;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: 'Klee One', cursive;
 }
 
 .info p, h2 {
   text-align: center;
   color: #8a817c;
   padding: 2px;
+  font-size: 20px;
+  font-family: 'Klee One', cursive;
 }
 
 .info {
@@ -78,3 +89,8 @@
   border-radius: 20px;
 }
 
+footer div{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}

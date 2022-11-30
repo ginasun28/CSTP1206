@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="jumbotron logo">
-          <h1><img src="./images/catlogo.png" width="50"> Kitty Hotel</h1>
+          <h1><img src="./images/catlogo.png" width="80">Kitty Hotel & Coffee</h1>
         </div>
         <div class="jumbotron message">
           <img src="./images/cat.png" alt="">
@@ -20,7 +20,7 @@
           <h3>Account Created</h3>
         </div>
         <div class="jumbotron jumbo-picture message2">
-          <p>Congratulations. Your account has been succesfully created. Please check your information and follow the link as below to confirm your email address<br>then you will be able to make a booking for your cat in no time.</p>
+          <p>Congratulations. Your account has been succesfully created. Please check your information and follow the link as below to confirm <br>your email address then you will be able to make a booking for your cat in no time.</p>
           <div class="info">
             <h2>Your Infomation: </h2>
             <p>Name: <%= name%></p>
@@ -29,16 +29,14 @@
             <div class="btn">
               <a class="fcc-btn" href="https://www.freecodecamp.org/">Confirm Your Email</a>
             </div>
-            <p>Thank you for your cooperation,</p>
-            <p>Best regard.</p>
+            <p>Thank you for your cooperation, <br>Best regard.</p>
           </div>
         </div>
       </div>
     <footer>
-      <div class="jumbotron">
+      <div class="jumbotron socialmedia">
         <% for (social of socialMedia) { %>
-          <img src="<%= social.img %>"/>
-          <a href="<%= social.href %>"></a>
+          <a href="<%= social.href %>"><img src="<%= social.img %>"/></a>
         <% } %>
       </div>
     </footer>
